@@ -9,6 +9,9 @@
     </filter>
     <filter-mapping>
         <filter-name>loginFilter</filter-name>
+        <!--过滤所有路径，
+            /也是过滤所有路径，但是不包括*.jsp这些
+        -->
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 </web-app>
