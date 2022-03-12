@@ -10,6 +10,8 @@ import javax.servlet.http.HttpSessionListener;
 public class Online implements HttpSessionListener, ServletContextListener {
     // 声明一个ServletContext类型的引用负责作为全局对象来记录当前在线用户的数量，通过属性记录
     private ServletContext servletContext = null;
+    private ServletContext servletContext1 = null;
+    private ServletContext servletContext2 = null;
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         //有一个用户上线  用户每次访问都初始化servlet上下文对象
